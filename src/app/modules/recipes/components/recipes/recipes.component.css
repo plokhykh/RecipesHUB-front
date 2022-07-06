@@ -1,0 +1,43 @@
+.main-recipes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recipes-wrapper {
+  column-gap: 50px;
+  row-gap: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.recipe-card {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  color: var(--second-color);
+}
+
+.recipe-card > h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  overflow: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recipe-card > p {
+  margin: 5px 0;
+}
+
+.card-ingredients {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+

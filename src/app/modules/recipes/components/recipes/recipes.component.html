@@ -1,0 +1,29 @@
+<div class="main-recipes">
+  <div class="recipes-wrapper">
+
+    <div *ngFor="let recipe of recipes| paginate: { itemsPerPage: 9, currentPage: currentPage } "
+         class="recipe-card">
+      <div class="recipe-img">
+        <app-image-preview [imageName]="recipe.image"></app-image-preview>
+      </div>
+
+      <h3>{{recipe.title}}</h3>
+
+      <p class="card-ingredients">
+        інгредієнти:
+        <span *ngFor="let ingredient of recipe.ingredients">
+      {{ingredient.name_ukr}},
+    </span>
+      </p>
+    </div>
+
+  </div>
+
+
+  <pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
+
+</div>
+
+
+
+
