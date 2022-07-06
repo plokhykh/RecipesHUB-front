@@ -1,5 +1,5 @@
 import {IRecipeCategory} from "./recipe-category.interface";
-import {IIngredient} from "./ingredient.interface";
+import {IIngredient} from "../../ingredients/interfaces/ingredient.interface";
 
 export interface IRecipe {
   "id": number;

@@ -4,5 +4,6 @@ const {API} = environment;
 
 export const urls = {
   recipes: `${API}/recipes`,
-  recipeImage: `${API}/recipes/image/`
+  recipeImage: `${API}/recipes/image/`,
+  ingredients: `${API}/ingredients`
 }
