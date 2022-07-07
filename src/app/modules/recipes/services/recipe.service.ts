@@ -11,8 +11,8 @@ export class RecipeService {
 
   constructor(private http: HttpClient) { }
 
-  getAll (): Observable<any>{
-    return this.http.get<any>(urls.recipes)
+  getAll (page: number=1, size: number = 30): Observable<any>{
+    return this.http.get<any>(`${urls.recipes}?page=${page}&size=${size}`)
   }
 
 }

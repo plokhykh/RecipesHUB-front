@@ -1,7 +1,7 @@
 <div class="main-recipes">
   <div class="recipes-wrapper">
 
-    <div *ngFor="let recipe of recipes| paginate: { itemsPerPage: 9, currentPage: currentPage } "
+    <div *ngFor="let recipe of recipes| paginate: { itemsPerPage, currentPage, totalItems} "
          class="recipe-card">
       <div class="recipe-img">
         <app-image-preview [imageName]="recipe.image"></app-image-preview>
@@ -20,10 +20,8 @@
   </div>
 
 
-  <pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
+  <pagination-controls (pageChange)="getPage($event)"></pagination-controls>
 
 </div>
-
-
 
 

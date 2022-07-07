@@ -3,7 +3,6 @@ import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 
 import {urls} from "../../../contants";
-import {IIngredient} from "../interfaces";
 
 @Injectable({
   providedIn: 'root'
