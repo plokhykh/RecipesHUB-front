@@ -1,5 +1,12 @@
-img{
+.small-size{
   width: 300px;
   height: 220px;
   border-radius: 30px;
 }
+
+.big-size{
+  width: 500px;
+  height: 420px;
+  border-radius: 30px;
+}
+

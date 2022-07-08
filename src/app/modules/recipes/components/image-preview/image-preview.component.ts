@@ -9,6 +9,8 @@ import {urls} from "../../../../contants";
 export class ImagePreviewComponent implements OnInit {
   @Input()
   imageName: string;
+  @Input()
+  isBigSize: boolean;
 
   imagePath: string = urls.recipeImage;
 
@@ -16,6 +18,8 @@ export class ImagePreviewComponent implements OnInit {
 
   ngOnInit(): void {
       this.imagePath = this.imagePath+this.imageName;
+    console.log(this.isBigSize);
+    console.log(this.imageName);
   }
 
 }

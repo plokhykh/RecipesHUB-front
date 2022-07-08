@@ -1,0 +1,28 @@
+<div *ngIf="recipe" class="details-wrapper">
+  <div>
+    <app-image-preview [imageName]="recipe.image" [isBigSize]="true"></app-image-preview>
+
+  </div>
+
+  <div>
+    <h3>{{recipe.title}}</h3>
+
+    <div>
+      <p *ngFor="let category of recipe.categories">
+        {{category.name}}
+        <span *ngFor="let subcategory of category.subcategories">
+        {{subcategory.name}}
+      </span>
+      </p>
+    </div>
+
+    <div class="details-ingredients">
+      <div *ngFor="let ingredient of recipe.ingredients">
+        <p>{{ingredient.name_ukr}}</p>
+        <p>{{ingredient.weight}}г</p>
+      </div>
+    </div>
+  </div>
+
+
+</div>

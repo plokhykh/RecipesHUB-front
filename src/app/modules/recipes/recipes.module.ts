@@ -7,15 +7,17 @@ import {NgxPaginationModule} from "ngx-pagination";
 import { RecipesComponent } from './components/recipes/recipes.component';
 import {RecipesRoutingModule} from "./recipes-routing.module";
 import {RecipeService} from "./services";
-import { RecipeComponent } from './components/recipe/recipe.component';
 import {ImagePreviewComponent} from "./components/image-preview/image-preview.component";
+import { RecipeDetailsComponent } from './components/recipe-details/recipe-details.component';
+import { RecipesMainComponent } from './components/recipes-main.component';
 
 
 @NgModule({
   declarations: [
     RecipesComponent,
-    RecipeComponent,
-    ImagePreviewComponent
+    ImagePreviewComponent,
+    RecipeDetailsComponent,
+    RecipesMainComponent
   ],
   imports: [
     CommonModule,

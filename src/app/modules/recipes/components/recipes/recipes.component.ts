@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {RecipeService} from "../../services/recipe.service";
 
 import {IRecipe} from "../../interfaces";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-recipes',
@@ -15,7 +16,12 @@ export class RecipesComponent implements OnInit {
   totalItems: number;
   itemsPerPage: number = 9;
 
-  constructor(private recipeService: RecipeService) {}
+  constructor(
+    private recipeService: RecipeService,
+    private router: Router,
+    private activatedRoute: ActivatedRoute
+  ) {
+  }
 
   ngOnInit(): void {
     this.getRecipesData(this.currentPage, this.itemsPerPage)
@@ -33,4 +39,5 @@ export class RecipesComponent implements OnInit {
     this.currentPage = page;
     this.getRecipesData(this.currentPage, this.itemsPerPage);
   }
+
 }

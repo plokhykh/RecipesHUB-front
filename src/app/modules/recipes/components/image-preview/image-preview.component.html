@@ -1,1 +1,4 @@
-<img [src]="imagePath"/>
+<img
+  [src]="imagePath"
+  [ngClass]="(isBigSize==true) ? 'big-size' : 'small-size'"
+/>

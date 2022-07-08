@@ -1,0 +1,19 @@
+.details-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 50px;
+}
+
+
+.details-ingredients {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  justify-content: space-between;
+}
+
+.details-ingredients > div {
+  display: flex;
+  justify-content: space-between;
+
+}
